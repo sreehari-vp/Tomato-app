@@ -10,7 +10,7 @@ const RestaurantDisplay = () => {
   const { setMenuItems } = useContext(StoreContext);
 
   useEffect(() => {
-    fetch("${import.meta.env.VITE_API_URL}/api/restaurants")
+    fetch(`${import.meta.env.VITE_API_URL}/api/restaurants`)
       .then((res) => res.json())
       .then((data) => {
         if (data.success) setRestaurants(data.restaurants);
