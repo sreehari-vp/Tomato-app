@@ -26,7 +26,7 @@ const Cart = ({ setShowLogin }) => {
     if (subtotal === 0 || !user) return;
 
     try {
-      const response = await fetch("${import.meta.env.VITE_API_URL}/api/apply-coupon", {
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/api/apply-coupon`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
