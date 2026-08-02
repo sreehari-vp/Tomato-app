@@ -1,0 +1,128 @@
+/* Full screen overlay */
+.login-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Semi-transparent background */
+.login-popup-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #00000080;
+  backdrop-filter: blur(2px);
+}
+
+/* Popup container */
+.login-popup-container {
+  position: relative;
+  background: #fff;
+  padding: 35px 30px;
+  border-radius: 10px;
+  width: min(400px, 90%);
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+  z-index: 10;
+  animation: slideIn 0.4s ease;
+}
+
+/* Header */
+.login-popup-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.login-popup-header h2 {
+  margin: 0;
+  font-size: 22px;
+  color: #222;
+}
+
+.login-popup-header img {
+  width: 20px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.login-popup-header img:hover {
+  transform: rotate(90deg);
+}
+
+/* Inputs */
+.login-popup-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.login-popup-inputs input {
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  transition: all 0.3s;
+}
+
+.login-popup-inputs input:focus {
+  outline: none;
+  border-color: tomato;
+  box-shadow: 0 0 5px tomato;
+}
+
+/* Button */
+.login-popup-container button {
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 500;
+  background: tomato;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.login-popup-container button:hover:not(:disabled) {
+  background: #e64535;
+  transform: translateY(-2px);
+}
+
+.login-popup-container button:disabled {
+  background: #ffa08c;
+  cursor: not-allowed;
+}
+
+/* Switch login/signup */
+.login-popup-switch {
+  font-size: 13px;
+  color: #555;
+  text-align: center;
+}
+
+.login-popup-switch span {
+  color: tomato;
+  cursor: pointer;
+  font-weight: 500;
+  margin-left: 5px;
+}
+
+.login-popup-switch span:hover {
+  text-decoration: underline;
+}
+
+/* Animation */
+@keyframes slideIn {
+  0% { transform: translateY(-50px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}

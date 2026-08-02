@@ -1,0 +1,115 @@
+/* Container */
+.place-order {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin: 50px auto;
+  padding: 20px;
+  max-width: 1100px;
+  background-color: #f8f8f8;
+  border-radius: 12px;
+}
+
+/* Left - Delivery Info */
+.place-order-left {
+  flex: 1 1 500px;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.place-order-left .title {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.place-order-left input {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+  outline-color: tomato;
+  transition: all 0.3s ease;
+}
+
+.place-order-left input:focus {
+  border-color: tomato;
+}
+
+.place-order-left .multi-fields {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.place-order-left .multi-fields input {
+  flex: 1 1 150px;
+}
+
+/* Right - Cart Totals */
+.place-order-right {
+  flex: 1 1 400px;
+}
+
+.place-order .cart-total {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.place-order .cart-total h2 {
+  font-size: 24px;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+.place-order .cart-total-details {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  font-size: 16px;
+  color: #555;
+}
+
+.place-order .cart-total-details b {
+  font-size: 18px;
+  color: #222;
+}
+
+.place-order .cart-total .total-line {
+  border-top: 1px solid #ddd;
+  margin: 15px 0;
+}
+
+.place-order .cart-total button {
+  width: 100%;
+  padding: 15px 0;
+  margin-top: 25px;
+  background-color: tomato;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.place-order .cart-total button:hover {
+  background-color: #e64535;
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .place-order {
+    flex-direction: column;
+    gap: 30px;
+  }
+}

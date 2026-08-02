@@ -1,0 +1,191 @@
+/* ================= GLOBAL ================= */
+
+.orders-page {
+  width: 92%;
+  max-width: 900px;
+  margin: 40px auto;
+  font-family: "Inter", "Segoe UI", sans-serif;
+}
+
+.orders-page h2 {
+  margin-bottom: 25px;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1c1c1c;
+}
+
+.no-orders {
+  color: #666;
+  font-size: 1.1rem;
+}
+
+/* ================= ORDER CARD ================= */
+
+.order-card {
+  background: #fff;
+  padding: 25px;
+  margin-bottom: 28px;
+  border-radius: 16px;
+  border: 1px solid #eaeaea;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+  transition: 0.2s ease-in-out;
+}
+
+.order-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.10);
+}
+
+/* ================= HEADER ================= */
+
+.order-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-bottom: 1px solid #f2f2f2;
+  padding-bottom: 15px;
+}
+
+.order-header h3 {
+  margin: 0;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #222;
+}
+
+.date {
+  margin-top: 4px;
+  font-size: 0.9rem;
+  color: #737373;
+}
+
+/* ================= STATUS BADGE ================= */
+
+.status-badge {
+  padding: 6px 16px;
+  border-radius: 12px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.status-badge.pending {
+  background: #ff9800;
+  color: #fff;
+}
+
+.status-badge.delivered {
+  background: #4caf50;
+  color: #fff;
+}
+
+.status-badge.cancelled {
+  background: #f44336;
+  color: #fff;
+}
+
+/* ================= ITEMS ================= */
+
+.order-items {
+  margin-top: 18px;
+}
+
+.order-item {
+  display: flex;
+  align-items: center;
+  padding: 16px 0;
+  border-bottom: 1px solid #f1f1f1;
+  gap: 16px;
+}
+
+.order-item:last-child {
+  border-bottom: none;
+}
+
+.order-item img {
+  width: 72px;
+  height: 72px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.item-info {
+  flex: 1;
+}
+
+.item-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 2px;
+}
+
+.qty {
+  color: #777;
+}
+
+.item-price {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #333;
+}
+
+/* ================= TOTALS ================= */
+
+.order-total-wrapper {
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top: 1px solid #eee;
+}
+
+.order-total-line {
+  display: flex;
+  justify-content: space-between;
+  margin: 6px 0;
+  font-size: 1rem;
+  color: #444;
+}
+
+.total-amount {
+  margin-top: 10px;
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #2d8fdd;
+}
+
+/* ================= FOOTER ================= */
+
+.order-footer {
+  margin-top: 22px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.order-footer button {
+  padding: 10px 18px;
+  border: none;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.reorder-btn {
+  background: #2d9cdb;
+  color: #fff;
+}
+
+.reorder-btn:hover {
+  background: #1c82bb;
+}
+
+.track-btn {
+  background: #4CAF50;
+  color: #fff;
+}
+
+.track-btn:hover {
+  background: #3a8d40;
+}
