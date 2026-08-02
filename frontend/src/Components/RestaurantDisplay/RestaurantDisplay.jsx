@@ -2,7 +2,7 @@ import React, { useEffect, useState, useContext } from "react";
 import "./RestaurantDisplay.css";
 import Fooditem from "../Fooditem/Fooditem";
 
-import { StoreContext } from "../../Context/storecontext";
+import { StoreContext } from "../../Context/Storecontext";
 
 const RestaurantDisplay = () => {
   const [restaurants, setRestaurants] = useState([]);

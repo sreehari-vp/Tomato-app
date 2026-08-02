@@ -1,14 +1,14 @@
-import React, { useState } from 'react';
-import { Route, Routes } from 'react-router-dom';
-import Navbar from './Components/Navbar/Navbar';
-import Home from './pages/Home/Home';
-import Cart from './pages/Cart/Cart';
-import Placeorder from './pages/placeorder/placeorder';
-import Orders  from './Components/Orders/orders';
-import Footer from './Components/footer/footer';
-import LoginPopup from './Components/LoginPopup/LoginPopup';
-import StoreContextProvider from './Context/storecontext'; // 🔥
+import React, { useState } from "react";
+import { Route, Routes } from "react-router-dom";
 
+import Navbar from "./Components/Navbar/Navbar";
+import Home from "./pages/Home/Home";
+import Cart from "./pages/Cart/Cart";
+import Placeorder from "./pages/PlaceOrder/Placeorder";
+import Orders from "./Components/Orders/Orders";
+import Footer from "./Components/Footer/Footer";
+import LoginPopup from "./Components/LoginPopup/LoginPopup";
+import StoreContextProvider from "./Context/Storecontext";
 const App = () => {
   const [showLogin, setShowLogin] = useState(false);
 

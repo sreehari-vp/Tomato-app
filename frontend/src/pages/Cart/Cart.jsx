@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
 import "./Cart.css";
-import { StoreContext } from "../../Context/storecontext";
+import { StoreContext } from "../../Context/Storecontext";
 import { useNavigate } from "react-router-dom";
 
 const Cart = ({ setShowLogin }) => {

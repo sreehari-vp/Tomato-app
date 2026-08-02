@@ -1,6 +1,6 @@
 import React, { useContext, useState, useEffect } from "react";
 import "./Placeorder.css";
-import { StoreContext } from "../../Context/storecontext";
+import { StoreContext } from "../../Context/Storecontext";
 import { useNavigate } from "react-router-dom";
 
 const Placeorder = () => {
