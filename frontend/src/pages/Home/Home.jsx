@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useContext } from "react";
 import "./Home.css";
-import { StoreContext } from "../../Context/Storecontext";
+import { StoreContext } from "../../Context/storecontext";
 import Header from "../../Components/Header/Header";
 import Exploremenu from "../../Components/Exploremenu/Exploremenu";
 import RestaurantDisplay from "../../Components/RestaurantDisplay/RestaurantDisplay";

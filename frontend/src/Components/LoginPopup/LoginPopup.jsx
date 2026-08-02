@@ -1,7 +1,7 @@
 import React, { useState, useContext } from "react";
 import "./LoginPopup.css";
 import { assets } from "../../assets/assets";
-import { StoreContext } from "../../Context/Storecontext";
+import { StoreContext } from "../../Context/storecontext";
 
 const LoginPopup = ({ setShowLogin }) => {
   const { setUser } = useContext(StoreContext);

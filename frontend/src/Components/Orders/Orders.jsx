@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useContext } from "react";
 import "./Orders.css";
-import { StoreContext } from "../../Context/Storecontext";
+import { StoreContext } from "../../Context/storecontext";
 
 const Orders = () => {
   const { user } = useContext(StoreContext);

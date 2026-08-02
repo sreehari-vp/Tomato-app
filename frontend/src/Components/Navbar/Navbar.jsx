@@ -2,7 +2,7 @@ import React, { useState, useContext } from "react";
 import "./Navbar.css";
 import { assets } from "../../assets/assets";
 import { Link } from "react-router-dom";
-import { StoreContext } from "../../Context/Storecontext";
+import { StoreContext } from "../../Context/storecontext";
 
 const Navbar = ({ setShowLogin }) => {
   const [menu, setMenu] = useState("home");
